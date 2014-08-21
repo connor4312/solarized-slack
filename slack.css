@@ -1,0 +1,188 @@
+body, #footer {
+    background: #002b36;
+}
+
+/* Adjust "New day" divider */
+.light_theme .msgs_holder .day_divider {
+  text-align: left !important;
+  margin-right: 0 !important;
+  background: none;
+}
+
+.light_theme .msgs_holder .day_divider .day_divider_label {
+  margin: 0 0 0 184px !important;
+  background: #073642;
+  color: #839496;
+  font-weight: normal;
+  font-size: 0.8em
+}
+
+.light_theme hr {
+    border-color: #073642 !important;
+}
+
+/* Different whitespace and border dividers */
+.light_theme .message {
+  position: relative !important;
+  padding-left: 200px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin: 0 !important;
+  color: #93a1a1;
+}
+
+.light_theme .message.divider,
+.light_theme .message.first {
+  border-top: 1px solid #073642 !important;
+}
+
+.light_theme .message.show_user ~ .message:not(.show_user) {
+  margin-top: -10px !important;
+}
+
+.light_theme .message.show_user.file_upload + .message {
+  padding-top: 10px !important;
+}
+
+.light_theme .msgs_holder .day_divider + .message {
+  border-top: 0 !important;
+}
+
+/* Treat all messages as processed */
+.light_theme .message.unprocessed {
+  color: #657b83 !important;
+}
+
+/* Different layout for messages */
+.light_theme .message .member_image,
+.light_theme .message_sender,
+.light_theme .message .timestamp,
+.light_theme .message .message_star_holder,
+.light_theme .message .msg_actions {
+  position: absolute !important;
+}
+
+.light_theme .message .member_image {
+  opacity: 1 !important;
+  -o-transform: scale(0.88) !important;
+  -moz-transform: scale(0.88) !important;
+  -webkit-transform: scale(0.88) !important;
+  transform: scale(0.88) !important;
+}
+
+.light_theme .message_sender {
+  left: 44px !important;
+  color: #2aa198 !important;
+}
+
+.light_theme .message .message_content {
+  padding-right: 100px !important;
+}
+
+/* No idea what this is */
+.light_theme .copy_only { display: none !important; }
+
+/* Putting timestamp and message icons on the right */
+.light_theme .message .timestamp {
+  right: 20px !important;
+  left: auto !important;
+  top: 11px !important;
+  white-space: nowrap !important;
+}
+
+.light_theme .message.divider ~ .message:not(.divider) .timestamp {
+  top: 3px !important;
+  right: 25px !important;
+}
+
+.light_theme .message .message_star_holder,
+.light_theme .message .msg_actions {
+  top: 7px !important;
+}
+
+.light_theme .message.divider ~ .message:not(.divider)  .message_star_holder,
+.light_theme .message.divider ~ .message:not(.divider) .msg_actions {
+  top: 0 !important;
+}
+
+.light_theme .message .message_star_holder {
+  right: 60px !important;
+  left: auto !important;
+}
+
+.light_theme .message .msg_actions {
+  right: 86px !important;
+}
+
+/* Wrangling image previews */
+.light_theme .message .message_star_holder + br,
+.light_theme .msg_inline_img_holder + .meta,
+.light_theme .msg_inline_img_holder + .meta + br {
+  display: none !important;
+}
+
+.inline_attachment .inline_attachment_wrapper {
+  display: inline-block !important;
+  padding: 2px 3px !important;
+}
+
+
+/* Editing images and videos */
+.light_theme .msg_inline_img_holder,
+.light_theme .msg_inline_video_holder {
+  border: 0 !important;
+}
+
+/* Editing quote blocks */
+
+.special_formatting_quote .quote_bar { display: none !important; }
+
+.special_formatting_quote .content {
+  border-left: 2px solid #ccc !important;
+  padding-left: 12px !important;
+  color: #777 !important;
+}
+
+/* Wrangling code blocks */
+pre.special_formatting {
+  margin-right: 200px !important;
+}
+
+/* Not as bold */
+.light_theme .message_sender,
+.light_theme .file_reference .file_name {
+  font-weight: 600 !important;
+}
+
+/* Removing useless mentions */
+.inline_attachment .mention,
+.message_content a .mention {
+  background: transparent !important;
+}
+
+.light_theme pre, .light_theme code {
+    background: #073642;
+    color: #839496;
+    border-color: #073642;
+}
+
+.light_theme .attachment_bar[style="background:#e3e4e6;"] {
+    background: #586e75 !important;
+}
+
+.light_theme .message a {
+    color: #2aa198;
+}
+
+.light_theme .msg_actions {
+    background: none;
+}
+
+.light_theme #messages_container .mention {
+    color: #2aa198;
+    background: none;
+}
+
+.light_theme #messages_container .mention:before {
+    content: "@";
+}
